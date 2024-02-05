@@ -9,7 +9,7 @@ data class HabitDbModel(
     @PrimaryKey(autoGenerate = true)
     val id: Int,
     val name: String,
-    val repetitionTime: Int,
+    val repetitionCount: Int,
     val repetitionGoal: Int,
     val priority: HabitPriority
 )

@@ -2,6 +2,7 @@ package com.baxramov.atomichabits.data.database
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
+import androidx.room.Delete
 import androidx.room.Query
 import androidx.room.Upsert
 
@@ -26,4 +27,6 @@ interface HabitsTrackerDao {
     @Query("DELETE FROM habits_track_table WHERE id = :habitId")
     fun removeHabitItem(habitId: Int)
 
+    @Query("DELETE FROM habits_track_table")
+    fun clearHabitsTrackList()
 }
