@@ -24,7 +24,7 @@ class HabitTrackerRepositoryImpl(
         }
     }
 
-    override suspend fun getHabitItem(habitId: Int): HabitEntity {
+    override suspend fun getHabit(habitId: Int): HabitEntity {
         return mapper.dbModelToEntity(db.getHabitItem(habitId))
     }
 
@@ -40,8 +40,8 @@ class HabitTrackerRepositoryImpl(
         )
     }
 
-    override suspend fun removeHabit(habitId: Int) {
-        db.removeHabitItem(habitId)
+    override suspend fun deleteHabit(habitId: Int) {
+        db.deleteHabitItem(habitId)
     }
 
     override suspend fun increaseRepetitionCount(habitId: Int) {

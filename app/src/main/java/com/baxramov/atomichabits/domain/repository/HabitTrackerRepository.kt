@@ -7,13 +7,13 @@ interface HabitTrackerRepository {
 
     suspend fun getHabitsList(): LiveData<List<HabitEntity>>
 
-    suspend fun getHabitItem(habitId: Int): HabitEntity
+    suspend fun getHabit(habitId: Int): HabitEntity
 
     suspend fun addNewHabit(habitItem: HabitEntity)
 
     suspend fun editHabit(habitItem: HabitEntity)
 
-    suspend fun removeHabit(habitId: Int)
+    suspend fun deleteHabit(habitId: Int)
 
     suspend fun increaseRepetitionCount(habitId: Int)
 
