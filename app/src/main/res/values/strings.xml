@@ -4,4 +4,11 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="edit_habit">Edit habit</string>
     <string name="add_new_habit">Add new habit</string>
+    <string name="habit_name">Habit name</string>
+    <string name="repetition_goal">Repetition goal</string>
+    <string name="save">Save</string>
+    <string name="high">High</string>
+    <string name="medium">Medium</string>
+    <string name="low">Low</string>
+    <string name="select_habit_priority">Select habit priority</string>
 </resources>
