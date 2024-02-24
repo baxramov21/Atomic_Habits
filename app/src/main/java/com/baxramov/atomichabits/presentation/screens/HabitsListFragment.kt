@@ -26,7 +26,7 @@ class HabitsListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.floatingActionButton.setOnClickListener {
+        binding.createNewHabitFloatingActionBtn.setOnClickListener {
             findNavController().navigate(R.id.action_habitsListFragment_to_createNewHabitFragment)
         }
     }

@@ -11,4 +11,5 @@
     <string name="medium">Medium</string>
     <string name="low">Low</string>
     <string name="select_habit_priority">Select habit priority</string>
+    <string name="select_deadline">Select deadline</string>
 </resources>
